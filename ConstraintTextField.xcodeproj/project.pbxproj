@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB34F77A222E069200DF878F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34F779222E069200DF878F /* AppDelegate.m */; };
+		DB34F77D222E069200DF878F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34F77C222E069200DF878F /* ViewController.m */; };
+		DB34F780222E069200DF878F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB34F77E222E069200DF878F /* Main.storyboard */; };
+		DB34F782222E069400DF878F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB34F781222E069400DF878F /* Assets.xcassets */; };
+		DB34F785222E069400DF878F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB34F783222E069400DF878F /* LaunchScreen.storyboard */; };
+		DB34F788222E069400DF878F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34F787222E069400DF878F /* main.m */; };
+		DB34F792222E069400DF878F /* ConstraintTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34F791222E069400DF878F /* ConstraintTextFieldTests.m */; };
+		DB34F79D222E069400DF878F /* ConstraintTextFieldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34F79C222E069400DF878F /* ConstraintTextFieldUITests.m */; };
+		DB34F7AC222E072300DF878F /* CSXConstraintTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34F7AB222E072300DF878F /* CSXConstraintTextField.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB34F78E222E069400DF878F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB34F76D222E069200DF878F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB34F774222E069200DF878F;
+			remoteInfo = ConstraintTextField;
+		};
+		DB34F799222E069400DF878F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB34F76D222E069200DF878F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB34F774222E069200DF878F;
+			remoteInfo = ConstraintTextField;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB34F775222E069200DF878F /* ConstraintTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConstraintTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB34F778222E069200DF878F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DB34F779222E069200DF878F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DB34F77B222E069200DF878F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DB34F77C222E069200DF878F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DB34F77F222E069200DF878F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB34F781222E069400DF878F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB34F784222E069400DF878F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB34F786222E069400DF878F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB34F787222E069400DF878F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB34F78D222E069400DF878F /* ConstraintTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConstraintTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB34F791222E069400DF878F /* ConstraintTextFieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstraintTextFieldTests.m; sourceTree = "<group>"; };
+		DB34F793222E069400DF878F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB34F798222E069400DF878F /* ConstraintTextFieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConstraintTextFieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB34F79C222E069400DF878F /* ConstraintTextFieldUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstraintTextFieldUITests.m; sourceTree = "<group>"; };
+		DB34F79E222E069400DF878F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB34F7AA222E072300DF878F /* CSXConstraintTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSXConstraintTextField.h; sourceTree = "<group>"; };
+		DB34F7AB222E072300DF878F /* CSXConstraintTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSXConstraintTextField.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB34F772222E069200DF878F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB34F78A222E069400DF878F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB34F795222E069400DF878F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB34F76C222E069200DF878F = {
+			isa = PBXGroup;
+			children = (
+				DB34F777222E069200DF878F /* ConstraintTextField */,
+				DB34F790222E069400DF878F /* ConstraintTextFieldTests */,
+				DB34F79B222E069400DF878F /* ConstraintTextFieldUITests */,
+				DB34F776222E069200DF878F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB34F776222E069200DF878F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB34F775222E069200DF878F /* ConstraintTextField.app */,
+				DB34F78D222E069400DF878F /* ConstraintTextFieldTests.xctest */,
+				DB34F798222E069400DF878F /* ConstraintTextFieldUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB34F777222E069200DF878F /* ConstraintTextField */ = {
+			isa = PBXGroup;
+			children = (
+				DB34F778222E069200DF878F /* AppDelegate.h */,
+				DB34F779222E069200DF878F /* AppDelegate.m */,
+				DB34F77B222E069200DF878F /* ViewController.h */,
+				DB34F77C222E069200DF878F /* ViewController.m */,
+				DB34F7AA222E072300DF878F /* CSXConstraintTextField.h */,
+				DB34F7AB222E072300DF878F /* CSXConstraintTextField.m */,
+				DB34F77E222E069200DF878F /* Main.storyboard */,
+				DB34F781222E069400DF878F /* Assets.xcassets */,
+				DB34F783222E069400DF878F /* LaunchScreen.storyboard */,
+				DB34F786222E069400DF878F /* Info.plist */,
+				DB34F787222E069400DF878F /* main.m */,
+			);
+			path = ConstraintTextField;
+			sourceTree = "<group>";
+		};
+		DB34F790222E069400DF878F /* ConstraintTextFieldTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB34F791222E069400DF878F /* ConstraintTextFieldTests.m */,
+				DB34F793222E069400DF878F /* Info.plist */,
+			);
+			path = ConstraintTextFieldTests;
+			sourceTree = "<group>";
+		};
+		DB34F79B222E069400DF878F /* ConstraintTextFieldUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB34F79C222E069400DF878F /* ConstraintTextFieldUITests.m */,
+				DB34F79E222E069400DF878F /* Info.plist */,
+			);
+			path = ConstraintTextFieldUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB34F774222E069200DF878F /* ConstraintTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB34F7A1222E069400DF878F /* Build configuration list for PBXNativeTarget "ConstraintTextField" */;
+			buildPhases = (
+				DB34F771222E069200DF878F /* Sources */,
+				DB34F772222E069200DF878F /* Frameworks */,
+				DB34F773222E069200DF878F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConstraintTextField;
+			productName = ConstraintTextField;
+			productReference = DB34F775222E069200DF878F /* ConstraintTextField.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB34F78C222E069400DF878F /* ConstraintTextFieldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB34F7A4222E069400DF878F /* Build configuration list for PBXNativeTarget "ConstraintTextFieldTests" */;
+			buildPhases = (
+				DB34F789222E069400DF878F /* Sources */,
+				DB34F78A222E069400DF878F /* Frameworks */,
+				DB34F78B222E069400DF878F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB34F78F222E069400DF878F /* PBXTargetDependency */,
+			);
+			name = ConstraintTextFieldTests;
+			productName = ConstraintTextFieldTests;
+			productReference = DB34F78D222E069400DF878F /* ConstraintTextFieldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB34F797222E069400DF878F /* ConstraintTextFieldUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB34F7A7222E069400DF878F /* Build configuration list for PBXNativeTarget "ConstraintTextFieldUITests" */;
+			buildPhases = (
+				DB34F794222E069400DF878F /* Sources */,
+				DB34F795222E069400DF878F /* Frameworks */,
+				DB34F796222E069400DF878F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB34F79A222E069400DF878F /* PBXTargetDependency */,
+			);
+			name = ConstraintTextFieldUITests;
+			productName = ConstraintTextFieldUITests;
+			productReference = DB34F798222E069400DF878F /* ConstraintTextFieldUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB34F76D222E069200DF878F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "曹世鑫";
+				TargetAttributes = {
+					DB34F774222E069200DF878F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					DB34F78C222E069400DF878F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = DB34F774222E069200DF878F;
+					};
+					DB34F797222E069400DF878F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = DB34F774222E069200DF878F;
+					};
+				};
+			};
+			buildConfigurationList = DB34F770222E069200DF878F /* Build configuration list for PBXProject "ConstraintTextField" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB34F76C222E069200DF878F;
+			productRefGroup = DB34F776222E069200DF878F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB34F774222E069200DF878F /* ConstraintTextField */,
+				DB34F78C222E069400DF878F /* ConstraintTextFieldTests */,
+				DB34F797222E069400DF878F /* ConstraintTextFieldUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB34F773222E069200DF878F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB34F785222E069400DF878F /* LaunchScreen.storyboard in Resources */,
+				DB34F782222E069400DF878F /* Assets.xcassets in Resources */,
+				DB34F780222E069200DF878F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB34F78B222E069400DF878F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB34F796222E069400DF878F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB34F771222E069200DF878F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB34F77D222E069200DF878F /* ViewController.m in Sources */,
+				DB34F788222E069400DF878F /* main.m in Sources */,
+				DB34F7AC222E072300DF878F /* CSXConstraintTextField.m in Sources */,
+				DB34F77A222E069200DF878F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB34F789222E069400DF878F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB34F792222E069400DF878F /* ConstraintTextFieldTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB34F794222E069400DF878F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB34F79D222E069400DF878F /* ConstraintTextFieldUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB34F78F222E069400DF878F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB34F774222E069200DF878F /* ConstraintTextField */;
+			targetProxy = DB34F78E222E069400DF878F /* PBXContainerItemProxy */;
+		};
+		DB34F79A222E069400DF878F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB34F774222E069200DF878F /* ConstraintTextField */;
+			targetProxy = DB34F799222E069400DF878F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB34F77E222E069200DF878F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB34F77F222E069200DF878F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB34F783222E069400DF878F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB34F784222E069400DF878F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB34F79F222E069400DF878F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DB34F7A0222E069400DF878F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB34F7A2222E069400DF878F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BQ9TFQKXJU;
+				INFOPLIST_FILE = ConstraintTextField/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.csx.text;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB34F7A3222E069400DF878F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BQ9TFQKXJU;
+				INFOPLIST_FILE = ConstraintTextField/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.csx.text;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB34F7A5222E069400DF878F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BQ9TFQKXJU;
+				INFOPLIST_FILE = ConstraintTextFieldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.csx.ConstraintTextFieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConstraintTextField.app/ConstraintTextField";
+			};
+			name = Debug;
+		};
+		DB34F7A6222E069400DF878F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BQ9TFQKXJU;
+				INFOPLIST_FILE = ConstraintTextFieldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.csx.ConstraintTextFieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConstraintTextField.app/ConstraintTextField";
+			};
+			name = Release;
+		};
+		DB34F7A8222E069400DF878F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BQ9TFQKXJU;
+				INFOPLIST_FILE = ConstraintTextFieldUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.csx.ConstraintTextFieldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ConstraintTextField;
+			};
+			name = Debug;
+		};
+		DB34F7A9222E069400DF878F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BQ9TFQKXJU;
+				INFOPLIST_FILE = ConstraintTextFieldUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.csx.ConstraintTextFieldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ConstraintTextField;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB34F770222E069200DF878F /* Build configuration list for PBXProject "ConstraintTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB34F79F222E069400DF878F /* Debug */,
+				DB34F7A0222E069400DF878F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB34F7A1222E069400DF878F /* Build configuration list for PBXNativeTarget "ConstraintTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB34F7A2222E069400DF878F /* Debug */,
+				DB34F7A3222E069400DF878F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB34F7A4222E069400DF878F /* Build configuration list for PBXNativeTarget "ConstraintTextFieldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB34F7A5222E069400DF878F /* Debug */,
+				DB34F7A6222E069400DF878F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB34F7A7222E069400DF878F /* Build configuration list for PBXNativeTarget "ConstraintTextFieldUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB34F7A8222E069400DF878F /* Debug */,
+				DB34F7A9222E069400DF878F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB34F76D222E069200DF878F /* Project object */;
+}
