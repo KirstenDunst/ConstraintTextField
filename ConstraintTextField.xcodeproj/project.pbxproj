@@ -16,6 +16,8 @@
 		DB34F792222E069400DF878F /* ConstraintTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34F791222E069400DF878F /* ConstraintTextFieldTests.m */; };
 		DB34F79D222E069400DF878F /* ConstraintTextFieldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34F79C222E069400DF878F /* ConstraintTextFieldUITests.m */; };
 		DB34F7AC222E072300DF878F /* CSXConstraintTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34F7AB222E072300DF878F /* CSXConstraintTextField.m */; };
+		DB3AF0A4222E4A9100132E80 /* CSXAuthCodeTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3AF0A3222E4A9100132E80 /* CSXAuthCodeTextFieldView.m */; };
+		DB3AF0A7222E4D5800132E80 /* CSXGCDTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3AF0A6222E4D5800132E80 /* CSXGCDTimerManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		DB34F79E222E069400DF878F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB34F7AA222E072300DF878F /* CSXConstraintTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSXConstraintTextField.h; sourceTree = "<group>"; };
 		DB34F7AB222E072300DF878F /* CSXConstraintTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSXConstraintTextField.m; sourceTree = "<group>"; };
+		DB3AF0A2222E4A9100132E80 /* CSXAuthCodeTextFieldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSXAuthCodeTextFieldView.h; sourceTree = "<group>"; };
+		DB3AF0A3222E4A9100132E80 /* CSXAuthCodeTextFieldView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSXAuthCodeTextFieldView.m; sourceTree = "<group>"; };
+		DB3AF0A5222E4D5800132E80 /* CSXGCDTimerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSXGCDTimerManager.h; sourceTree = "<group>"; };
+		DB3AF0A6222E4D5800132E80 /* CSXGCDTimerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSXGCDTimerManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,10 @@
 				DB34F779222E069200DF878F /* AppDelegate.m */,
 				DB34F77B222E069200DF878F /* ViewController.h */,
 				DB34F77C222E069200DF878F /* ViewController.m */,
+				DB3AF0A2222E4A9100132E80 /* CSXAuthCodeTextFieldView.h */,
+				DB3AF0A3222E4A9100132E80 /* CSXAuthCodeTextFieldView.m */,
+				DB3AF0A5222E4D5800132E80 /* CSXGCDTimerManager.h */,
+				DB3AF0A6222E4D5800132E80 /* CSXGCDTimerManager.m */,
 				DB34F7AA222E072300DF878F /* CSXConstraintTextField.h */,
 				DB34F7AB222E072300DF878F /* CSXConstraintTextField.m */,
 				DB34F77E222E069200DF878F /* Main.storyboard */,
@@ -269,8 +279,10 @@
 			files = (
 				DB34F77D222E069200DF878F /* ViewController.m in Sources */,
 				DB34F788222E069400DF878F /* main.m in Sources */,
+				DB3AF0A4222E4A9100132E80 /* CSXAuthCodeTextFieldView.m in Sources */,
 				DB34F7AC222E072300DF878F /* CSXConstraintTextField.m in Sources */,
 				DB34F77A222E069200DF878F /* AppDelegate.m in Sources */,
+				DB3AF0A7222E4D5800132E80 /* CSXGCDTimerManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

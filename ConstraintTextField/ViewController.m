@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CSXConstraintTextField.h"
+#import "CSXAuthCodeTextFieldView.h"
 
 @interface ViewController ()
 
@@ -22,9 +23,10 @@
     [self createView];
 }
 - (void)createView {
+    //1
     UILabel *label = [[UILabel alloc] init];
     label.frame = CGRectMake(0, 50, 290, 40);
-    label.text = @"长度约束，带分割显示";
+    label.text = @"1长度约束，带分割显示";
     label.textColor = [UIColor redColor];
     label.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:label];
@@ -39,9 +41,10 @@
         NSLog(@">>>>>>>>>>>>%@",contentStr);
     };
     
+    //2
     UILabel *lab = [[UILabel alloc] init];
     lab.frame = CGRectMake(0, 190, 290, 40);
-    lab.text = @"约束只能显示n位小数";
+    lab.text = @"2约束只能显示n位小数";
     lab.textColor = [UIColor redColor];
     lab.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:lab];
@@ -51,6 +54,23 @@
     contentText.keyboardType = UIKeyboardTypeDecimalPad;
     [contentText addTarget:self action:@selector(valueChange:) forControlEvents:UIControlEventEditingChanged];
     [self.view addSubview:contentText];
+    
+    //3
+    UILabel *lab3 = [[UILabel alloc] init];
+    lab3.frame = CGRectMake(0, 300, 290, 40);
+    lab3.text = @"3显示验证码倒计时按钮和输入框组件";
+    lab3.textColor = [UIColor redColor];
+    lab3.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:lab3];
+    CSXAuthCodeTextFieldView *accountView = [[CSXAuthCodeTextFieldView alloc]initWithFrame:CGRectMake(0, 350, self.view.frame.size.width, 50)];
+    [accountView hintWithTitle:@"手机号" PalceHoderStr:@"请输入申请人手机号" keyBoard:UIKeyboardTypeNumberPad isNeedVertificdCode:NO isNeedSpeView:YES isCanEdit:YES];
+    [self.view addSubview:accountView];
+    CSXAuthCodeTextFieldView *passwordView = [[CSXAuthCodeTextFieldView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(accountView.frame), self.view.frame.size.width, 50)];
+    [passwordView hintWithTitle:@"验证码" PalceHoderStr:@"请输入验证码" keyBoard:UIKeyboardTypeNumberPad isNeedVertificdCode:YES isNeedSpeView:YES isCanEdit:YES];
+    passwordView.vertificdChoose = ^{
+        [passwordView VertificdCodeTime];
+    };
+    [self.view addSubview:passwordView];
 }
 - (void)valueChange:(UITextField *)textfield {
     [self limitTxField:textfield length:4];
