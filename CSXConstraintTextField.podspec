@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CSXConstraintTextField"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "约束内容长度，键盘类型，小数长度，银行卡几位分割"
 
   # This description is used to generate tags and improve search results.

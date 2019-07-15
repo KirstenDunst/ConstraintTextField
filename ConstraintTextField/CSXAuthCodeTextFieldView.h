@@ -11,7 +11,7 @@
 //验证码触发
 typedef void(^VertificdBtnChoose)(void);
 //输入框触发事件
-typedef void(^ContentTextChange)(NSString *ContentStr);
+typedef void(^ContentTextChange)(NSString * _Nullable ContentStr);
 
 NS_ASSUME_NONNULL_BEGIN
 

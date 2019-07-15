@@ -67,8 +67,9 @@
     [self.view addSubview:accountView];
     CSXAuthCodeTextFieldView *passwordView = [[CSXAuthCodeTextFieldView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(accountView.frame), self.view.frame.size.width, 50)];
     [passwordView hintWithTitle:@"验证码" PalceHoderStr:@"请输入验证码" keyBoard:UIKeyboardTypeNumberPad isNeedVertificdCode:YES isNeedSpeView:YES isCanEdit:YES];
+    __weak typeof(passwordView)weakPassView = passwordView;
     passwordView.vertificdChoose = ^{
-        [passwordView VertificdCodeTime];
+        [weakPassView VertificdCodeTime];
     };
     [self.view addSubview:passwordView];
 }
