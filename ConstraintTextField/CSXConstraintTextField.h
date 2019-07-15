@@ -10,11 +10,11 @@
 
 @protocol CSXConstraintTextFieldDelegate <NSObject>
 
-- (void)textField:(UITextField *)textfield textContentStr:(NSString *)contentStr;
+- (void)textField:(UITextField *_Nullable)textfield textContentStr:(NSString *_Nullable)contentStr;
 
 @end
 
-typedef void(^CSXConstraintTextFieldContentBack)(NSString *contentStr);
+typedef void(^CSXConstraintTextFieldContentBack)(NSString * _Nonnull contentStr);
 
 
 /** 内容分割方式 */ //标题的分割类型 ，0，默认不分割处理，1身份证类型6444..， 2银行卡类型444..,
@@ -27,28 +27,6 @@ typedef NS_ENUM(NSUInteger,ContentSpeType) {
     ContentSpeTypeBank,
 };
 
-/** 内容长度限制要求 */ //0默认不限制，1限制18位，2限制11位
-typedef NS_ENUM(NSUInteger,ContentLengthType) {
-    /** 默认不限制 */
-    ContentLengthTypeNull = 0,
-    /** 限制长度18位*/
-    ContentLengthType18,
-    /** 限制长度11位*/
-    ContentLengthType11,
-    /** 限制长度12位*/
-    ContentLengthType12,
-};
-
-/** 键盘调用的特殊使用 */ //默认键盘0，全数字键盘1，营业执照身份证类型2
-typedef NS_ENUM(NSUInteger,KeyBoardType) {
-    /** 默认不特殊选择键盘 */
-    KeyBoardTypeNull = 0,
-    /** 全数字键盘*/
-    KeyBoardTypeNumber,
-    /** 身份证，营业执照类型*/
-    KeyBoardTypeIDLicense,
-};
-
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CSXConstraintTextField : UIView
@@ -58,10 +36,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 //中间加空格分割类型
 @property (nonatomic, assign)ContentSpeType speType;
-//长度限制多少位类型
-@property (nonatomic, assign)ContentLengthType lengthType;
+//长度限制 0默认不限制，限制几位就传多少
+@property (nonatomic, assign)int length;
 //吊起键盘类型
-@property (nonatomic, assign)KeyBoardType keyBoardType;
+@property (nonatomic, assign)UIKeyboardType keyBoardType;
 @end
 
 NS_ASSUME_NONNULL_END

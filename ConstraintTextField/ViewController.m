@@ -33,9 +33,9 @@
     
     CSXConstraintTextField *textField = [[CSXConstraintTextField alloc]initWithFrame:CGRectMake(0, 100, 290, 50)];
     textField.backgroundColor = [UIColor redColor];
-    textField.keyBoardType = KeyBoardTypeNumber;
+    textField.keyBoardType = UIKeyboardTypeNumberPad;
     textField.speType = ContentSpeTypeIDCard;
-    textField.lengthType = ContentLengthType11;
+    textField.length = 21;
     [self.view addSubview:textField];
     textField.contentBack = ^(NSString *contentStr) {
         NSLog(@">>>>>>>>>>>>%@",contentStr);

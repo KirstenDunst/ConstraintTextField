@@ -17,6 +17,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
+        self.length = 0;
         [self createViewWithFrame:frame];
     }
     return self;
@@ -26,22 +27,8 @@
     [self addSubview:self.textField];
 }
 
-- (void)setKeyBoardType:(KeyBoardType)keyBoardType {
-    switch (keyBoardType) {
-        case KeyBoardTypeNull:
-             self.textField.keyboardType = UIKeyboardTypeDefault;
-            break;
-        case KeyBoardTypeNumber:
-             self.textField.keyboardType = UIKeyboardTypeNumberPad;
-            break;
-        case KeyBoardTypeIDLicense:
-             self.textField.keyboardType = UIKeyboardTypeASCIICapable;
-            break;
-
-        default:
-            self.textField.keyboardType = UIKeyboardTypeDefault;
-            break;
-    }
+- (void)setKeyBoardType:(UIKeyboardType)keyBoardType {
+    self.textField.keyboardType = keyBoardType;
 }
 
 // 文本框编辑监听
@@ -85,23 +72,10 @@
         }
         textField.text = strmText;
     }
-    NSUInteger limitLength = 0;
-    switch (self.lengthType) {
-        case ContentLengthType18:
-            limitLength = 18;
-            break;
-        case ContentLengthType11:
-            limitLength = 11;
-            break;
-        case ContentLengthType12:
-            limitLength = 12;
-            break;
-        default:
-            break;
-    }
+    
     NSString *strLimitStr = [textField.text stringByReplacingOccurrencesOfString:@" " withString:@""];
-    if (strLimitStr.length >= limitLength && self.lengthType != ContentLengthTypeNull) {
-        strLimitStr = [strLimitStr substringToIndex:limitLength];
+    if (strLimitStr.length >= self.length && self.length != 0) {
+        strLimitStr = [strLimitStr substringToIndex:self.length];
         textField.text = [self dealType:self.speType WithString:strLimitStr];
         if ([[textField.text substringFromIndex:textField.text.length-1] isEqualToString:@" "]) {
             textField.text = [textField.text substringToIndex:textField.text.length-1];
